@@ -111,6 +111,7 @@ img {
 .why-us {
     margin-bottom: 3rem;
 }
+
 .why-us .col-left {
     width: 40%;
 }
@@ -128,9 +129,29 @@ img {
     SOLUZIONE RESPONSIVE
  ************************************************/
 
- /* Tablet resolution */
- @media screen and (max-width: 768px) {
+/* Tablet resolution */
+@media screen and (max-width: 768px) {
     .container {
         width: 100%;
     }
- }   
+}
+
+
+/* Mobile resolution */
+@media screen and (max-width: 480px) {
+    .container {
+        width: 80%;
+    }
+
+    .card {
+        margin-bottom: 3rem;
+    }
+
+    .row {
+        flex-direction: column;
+    }
+
+    .row .col {
+        width: 100%;
+    }
+}
